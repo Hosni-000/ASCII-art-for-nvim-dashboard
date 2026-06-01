@@ -14,6 +14,7 @@ $file = file($draft_file, FILE_IGNORE_NEW_LINES);
 echo "dashboard.section.header.val = {" . PHP_EOL;
 
 foreach ($file as $line) {
+	$line = str_replace('\\', '\\\\', $line);
 	echo "'" . $line . "'," . PHP_EOL;
 }
 echo "}" . PHP_EOL;
