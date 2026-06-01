@@ -1,7 +1,7 @@
 #! /usr/bin/php
 <?php
 // defining path of ascii art
-// please put the art in that file name "draft.php"
+// please put the art in that file name "draft.txt"
 $draft_file = __DIR__ . "/draft.txt";
 
 if (!file_exists($draft_file)) {
